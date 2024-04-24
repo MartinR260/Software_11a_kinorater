@@ -1,6 +1,8 @@
 import azure.functions as func
 import logging
 import pyodbc
+from datetime import datetime
+
 
 connection_string = "DRIVER={SQL Server};SERVER=kinorater1sqldbserver;DATABASE=kinorater1db;UID=martinadmin;PWD=admin123!"
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
